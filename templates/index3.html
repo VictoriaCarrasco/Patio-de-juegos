@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Document</title>
+
+    </head>
+    <body style="display: flex; flex-direction: column; justify-content:  center; align-items: center;">
+        <h1>Welcome to my page</h1> 
+        <div style= " display:  flex;">
+        {% for i in range(num_times) %}
+        <div style="width: 200px; height: 200px; background-color: {{ color }}; border: 2px solid black; margin: 10px;"></div>
+        {% endfor%}
+    </body>
+</html>
